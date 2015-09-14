@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>test the chinese regex</title>
+	<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("#num").on("blur",function(){
+				var value = $(this).val();
+				if(/^[\u4E00-\u9FA5]+$/.test(value)){
+					alert("Chinese");
+				}
+
+			});
+		});
+		
+	</script>
+  </head>
+  
+  <body>
+  		<p>test the chinese regex</p>
+  		<form>
+    		<input type="text" id="num" name="phone"/>
+    	</form>
+  </body>
+</html>
