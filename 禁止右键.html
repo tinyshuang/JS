@@ -1,0 +1,22 @@
+<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+
+<html>
+  <head>
+    <title>测试一个只能输入数字的Text-input</title>
+	<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("#num").on("contextmenu",function(){
+				return false;
+			});
+		});
+		
+	</script>
+  </head>
+  
+  <body>
+  		<form>
+    		<input type="text" id="num" name="phone"/>
+    	</form>
+  </body>
+</html>
